@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+  --navbar-height: 5px; 
+}
+
+
+#navbar{
+   display: flex;
+   align-items: center;
+}
+
+#navbar::before{
+   content: "";
+   background-color:black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.5;
+}
+
+#logo{
+   margin: 10px 34px;
+}
+
+#logo img{
+   border-radius: 100%;
+   height: 56px;
+   margin: 3px 6px;
+}
+
+
+#navbar{
+   position: relative;
+}
+
+
+
+#navbar ul{
+   display: flex;
+   font-family: 'Playball', cursive;
+}
+
+
+#navbar ul li{
+   list-style: none;
+   font-size: 0.9rem;
+}
+
+#navbar ul li a{
+   color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+
+
+#home {
+   display: flex;
+   flex-direction: column;
+   padding: 84px 200px;
+   height: 19px;
+   
+}
+
+#home::before{
+
+   content: "";
+   justify-content: center;
+   align-items: center;
+   background: url('../bg.jpg') no-repeat center center/cover;
+   position: absolute;
+    margin-left: -200px;
+   border-bottom-right-radius: 308%;
+   border-bottom-left-radius: 972%;
+   top: 0%;
+   height: 65%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.5;
+
+}
+
+#home .items{
+   background-color: red;
+   border-color: brown;
+}
+#home .items div{
+   display: flex;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding:25px 20px;
+  }
+  
+  .container .heading {
+    
+    font-size: 40px;
+    margin-bottom: 8px;
+   
+   
+    color: #e6e6e8;
+}
+  
+  .container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:20px;
+  }
+  
+  .container .box-container .box{
+    background-color: #ebd7d7;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: none;
+  }
+  
+  .container .box-container .box:nth-child(1),
+  .container .box-container .box:nth-child(2){
+    display: inline-block;
+  }
+  
+  .container .box-container .box .image{
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .container .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container .box-container .box:hover .image img{
+    transform: scale(1.1);
+  }
+  
+  .container .box-container .box .content h3{
+    font-size: 20px;
+    color:#334;
+  }
+  
+  .container .box-container .box .content p{
+    font-size: 15px;
+    color:#777;
+    line-height: 2;
+    padding:15px 0;
+  }
+  
+  .container .box-container .box .content .btn{
+    display: inline-block;
+    padding:10px 30px;
+    border:1px solid #334;
+    color:#334;
+    font-size: 16px;
+  }
+  
+  .container .box-container .box .content .btn:hover{
+    background-color: crimson;
+    border-color: crimson;
+    color:#fff;
+  }
+  
+  .container .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top:1px solid #334;
+  }
+  
+  .container .box-container .box .content .icons span{
+    font-size: 14px;
+    color:#777;
+  }
+  
+  .container .box-container .box .content .icons span i{
+    color:crimson;
+    padding-right: 5px;
+  }
+  
+  #load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding:13px 30px;
+    border:1px solid #334;
+    color:#334;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  #load-more:hover{
+    background-color: crimson;
+    border-color: crimson;
+    color:#fff;
+  }
+  
+  @media (max-width:450px){
+  
+    .container .heading{
+      font-size: 25px;
+    }
+  
+    .container .box-container{
+      grid-template-columns: 1fr;
+    }
+  
+    .container .box-container .box .image{
+      height: 200px;
+    }
+  
+    .container .box-container .box .content p{
+      font-size: 12px;
+    }
+  
+    .container .box-container .box .content .icons span{
+      font-size: 12px;
+    }
+  
+  }
