@@ -118,7 +118,7 @@
     color: #e6e6e8;
 }
   
-  
+ 
   
   .container .box-container .box{
     background-color: #ebd7d7;
@@ -137,7 +137,6 @@
     margin-bottom: 20px;
     overflow: hidden;
     height: 250px;
-      width: 457px;
     border-radius: 5px;
   }
   
@@ -196,10 +195,9 @@
     padding-right: 5px;
   }
   
-  
-  
+ 
   @media (max-width:450px){
-  
+
     .container .heading{
       font-size: 25px;
     }
